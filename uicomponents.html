@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Style Guide</title>
+
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styling sheet -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="styleguide.html">Front-end Style Guide</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="styleguide.html">Design Elements</a></li>
+                    <li><a href="uicomponents.html">UI Components</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <div class="container">
+                        <h3>Table of Contents</h3>
+                        <hr/>
+                    </div>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#buttongroups">Button Groups</a></li>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="#dialogs">Dialogs</a></li>
+                    <li><a href="#navmenus">Navigation Menus</a></li>
+                    <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                    <li><a href="#input">Text Input</a></li>
+					<li><a href="#textArea">Text Area</a></li>
+                    <li><a href="#date">Date Picker</a></li>
+                    
+                    <li><a href="#radio">Radio Buttons</a></li>
+                    <li><a href="#dropdown">Drop-down Menus</a></li>
+                    <li><a href="#range">Sliders</a></li>
+                    <li><a href="#progress">Progress Indicators</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header">Graham McCroy Style Guide</h1>
+
+                <div class="container-fluid text-center">
+                    <h3 id="purpose">This guide &amp; code repository is used for designing the human resource management system at various organizations.</h3>
+                </div>
+
+                <h2 class="page-header" id="buttons">Buttons</h2>
+                <div class="container-fluid">
+                    <h3 class="text-center">A button is a UI element that requires action by the user to perform a function.</h3>
+                    <p class="text-center">Each button will have a default size but color varies depending on the state of the action being performed&#46;</p>
+                </div>
+                <div class="container-fluid text-center">
+                    <!-- Action buttons -->
+                    <button type="button" class="default-btn">Default</button>
+                    <button type="button" class="success-btn">Success</button>
+                    <button type="button" class="alert-btn">Alert</button>
+                    <button type="button" class="warning-btn">Warning</button>
+                    <a href="#links">http://www.uwsp.edu</a>
+                </div>
+                <br/>
+                <h2 class="page-header">Button Usage</h2>
+                <!-- Default button -->
+                <div class="container-fluid text-center">
+                    <h3 class="text-center">Default Button</h3>
+                    <button type="button" class="default-btn">.default-btn</button>
+
+                    <p class="text-center">The default button is used for submitting forms &amp; other actions&#46;</p>
+                    <p class="text-center"><b>HTML code for default button:</b></p>
+                    <p class="text-center">&lt;button type&#61;&#39;button&#39; class&#61;&#39;default&#45;btn&#39;&gt;Default&lt;/button&gt;</p>
+                    <p class="text-center"><b>CSS for default button:</b></p>
+                    <p class="text-center">&#46;default&#45;btn &#123;</p>
+                    <p class="text-center">background&#45;color&#58; &#35;9E9E9E&#59;</p>
+                    <p class="text-center">border&#45;color&#58; &#35;9E9E9E&#59;</p>
+                    <p class="text-center">border&#45;radius&#58; 10&#37;&#59;</p>
+                    <p class="text-center">color&#58; &#35;FFFFFF&#59;</p>
+                    <p class="text-center">box&#45;shadow&#58; 0 1px 2px &#35;fff&#44;</p>
+                    <p class="text-center">0 &#45;1px 1px &#35;666&#44;</p>
+                    <p class="text-center">inset 0 &#45;1px 1px rgba&#40;0&#44; 0&#44; 0&#44; 0&#46;5&#41;&#44;</p>
+                    <p class="text-center">inset 0 1px 1px rgba&#40;255&#44; 255&#44; 255&#44; 0&#46;8&#41;&#59; &#125;</p>
+
+                    <p class="text-center">&#46;default&#45;btn&#58;hover &#123;</p>
+                    <p class="text-center">background&#45;color&#58; &#35;8E8E8E&#59;</p>
+                    <p class="text-center">border&#45;color&#58; &#35;8E8E8E&#59; &#125;</p>
+                </div>
+                <!---------------------->
+
+                <!-- Success button -->
+                <div class="container-fluid text-center">
+                    <h3 class="text-center">Success Button</h3>
+                    <button type="button" class="success-btn">.success-btn</button>
+
+                    <p class="text-center">The success button is used to show when an action was successful&#46;</p>
+                    <p class="text-center"><b>HTML code for success button:</b></p>
+                    <p class="text-center">&lt;button type&#61;&#39;button&#39; class&#61;&#39;success&#45;btn&#39;&gt;Success&lt;/button&gt;</p>
+                    <p class="text-center"><b>CSS for success button:</b></p>
+                    <p class="text-center">&#46;success&#45;btn &#123;</p>
+                    <p class="text-center">background&#45;color&#58; &#35;4CAF50&#59;</p>
+                    <p class="text-center">border&#45;color&#58; &#35;4CAF50&#59;</p>
+                    <p class="text-center">border&#45;radius&#58; 10&#37;&#59;</p>
+                    <p class="text-center">color&#58; &#35;FFFFFF&#59;</p>
+                    <p class="text-center">box&#45;shadow&#58; 0 1px 2px &#35;fff&#44;</p>
+                    <p class="text-center">0 &#45;1px 1px &#35;666&#44;</p>
+                    <p class="text-center">inset 0 &#45;1px 1px rgba&#40;0&#44; 0&#44; 0&#44; 0&#46;5&#41;&#44;</p>
+                    <p class="text-center">inset 0 1px 1px rgba&#40;255&#44; 255&#44; 255&#44; 0&#46;8&#41;&#59; &#125;</p>
+                </div>
+                <!---------------------->
+
+                <!-- Alert button -->
+                <div class="container-fluid text-center">
+                    <h3 class="text-center">Alert Button</h3>
+                    <button type="button" class="alert-btn">.alert-btn</button>
+
+                    <p class="text-center">The alert button is used to show when something unexpected occured during an action&#46;</p>
+                    <p class="text-center"><b>HTML code for alert button:</b></p>
+                    <p class="text-center">&lt;button type&#61;&#39;button&#39; class&#61;&#39;alert&#45;btn&#39;&gt;Alert&lt;/button&gt;</p>
+                    <p class="text-center"><b>CSS for alert button:</b></p>
+                    <p class="text-center">&#46;alert&#45;btn &#123;</p>
+                    <p class="text-center">background&#45;color&#58; &#35;F44336&#59;</p>
+                    <p class="text-center">border&#45;color&#58; &#35;F44336&#59;</p>
+                    <p class="text-center">border&#45;radius&#58; 10&#37;&#59;</p>
+                    <p class="text-center">color&#58; &#35;FFFFFF&#59;</p>
+                    <p class="text-center">box&#45;shadow&#58; 0 1px 2px &#35;fff&#44;</p>
+                    <p class="text-center">0 &#45;1px 1px &#35;666&#44;</p>
+                    <p class="text-center">inset 0 &#45;1px 1px rgba&#40;0&#44; 0&#44; 0&#44; 0&#46;5&#41;&#44;</p>
+                    <p class="text-center">inset 0 1px 1px rgba&#40;255&#44; 255&#44; 255&#44; 0&#46;8&#41;&#59; &#125;</p>
+                </div>
+                <!---------------------->
+
+                <!-- Warning button -->
+                <div class="container-fluid text-center">
+                    <h3 class="text-center">Warning Button</h3>
+                    <button type="button" class="warning-btn">.warning-btn</button>
+
+                    <p class="text-center">The warning button accompanies a dialog for certain actions&#46;</p>
+                    <p class="text-center"><b>HTML code for warning button:</b></p>
+                    <p class="text-center">&lt;button type&#61;&#39;button&#39; class&#61;&#39;warning&#45;btn&#39;&gt;Warning&lt;/button&gt;</p>
+                    <p class="text-center"><b>CSS for warning button:</b></p>
+                    <p class="text-center">&#46;warning&#45;btn &#123;</p>
+                    <p class="text-center">background&#45;color&#58; &#35;FFC107&#59;</p>
+                    <p class="text-center">border&#45;color&#58; &#35;FFC107&#59;</p>
+                    <p class="text-center">border&#45;radius&#58; 10&#37;&#59;</p>
+                    <p class="text-center">color&#58; &#35;FFFFFF&#59;</p>
+                    <p class="text-center">box&#45;shadow&#58; 0 1px 2px &#35;fff&#44;</p>
+                    <p class="text-center">0 &#45;1px 1px &#35;666&#44;</p>
+                    <p class="text-center">inset 0 &#45;1px 1px rgba&#40;0&#44; 0&#44; 0&#44; 0&#46;5&#41;&#44;</p>
+                    <p class="text-center">inset 0 1px 1px rgba&#40;255&#44; 255&#44; 255&#44; 0&#46;8&#41;&#59; &#125;</p>
+                </div>
+                <!---------------------->
+                <!-- Links -->
+                <div class="container-fluid text-center">
+                    <h3 class="text-center">Links</h3>
+                    <a href="#links">http://www.uwsp.edu</a>
+                    <p class="text-center">Links will not have any styling to them. They will remain the default setting because users would like to know which page the site is directing them to&#46;</p>
+
+                </div>
+                <!----------->
+                <!-- Button groups -->
+                <div class="container-fluid text-center">
+                    <h2 class="page-header text-center" id="buttongroups">Button Groups</h2>
+                    <p class="text-center">Group buttons using group-btn&#46;</p>
+                    <button type="button" class="group-btn">Small</button>
+                    <button type="button" class="group-btn">Medium</button>
+                    <button type="button" class="group-btn">Large</button>
+                    <p class="text-center">Button groups can be used when you want to select what type of action to perform&#46;</p>
+                    <p class="text-center"><b>HTML code for button groups:</b></p>
+                    <p class="text-center">&lt;button&nbsp;type=&quot;button&quot;&nbsp;class=&quot;group-btn&quot;&gt;Small&lt;/button&gt;</p>
+                    <p class="text-center">&lt;button&nbsp;type=&quot;button&quot;&nbsp;class=&quot;group-btn&quot;&gt;Medium&lt;/button&gt;</p>
+                    <p class="text-center">&lt;button&nbsp;type=&quot;button&quot;&nbsp;class=&quot;group-btn&quot;&gt;Large&lt;/button&gt;</p>
+                    <p class="text-center"><b>CSS for button groups:</b></p>
+                    <p class="text-center">.group-btn&nbsp;{</p>
+                    <p class="text-center">background-color:&nbsp;#9E9E9E;</p>
+                    <p class="text-center">border-color:&nbsp;#9E9E9E;</p>
+                    <p class="text-center">border-radius:&nbsp;3px;</p>
+                    <p class="text-center">color:&nbsp;#FFFFFF;</p>
+                    <p class="text-center">box-shadow:&nbsp;0&nbsp;1px&nbsp;2px&nbsp;#fff,</p>
+                    <p class="text-center">0&nbsp;-1px&nbsp;1px&nbsp;#666,</p>
+                    <p class="text-center">inset&nbsp;0&nbsp;-1px&nbsp;1px&nbsp;rgba(0,&nbsp;0,&nbsp;0,&nbsp;0.5),</p>
+                    <p class="text-center">inset&nbsp;0&nbsp;1px&nbsp;1px&nbsp;rgba(255,&nbsp;255,&nbsp;255,&nbsp;0.8);</p>
+                    <p class="text-center">margin-left:&nbsp;-5px;}</p>
+                    <p class="text-center"></p>
+                    <p class="text-center">.group-btn:hover&nbsp;{</p>
+                    <p class="text-center">background-color:&nbsp;#8E8E8E;</p>
+                    <p class="text-center">border-color:&nbsp;#8E8E8E;}</p>
+                </div>
+                <!------------------->
+                <!-- Images -->
+                <div class="container-fluid text-center">
+                    <h2 class="page-header" "text-center" id="images">Images</h2>
+
+                    <p class="text-center">All images must have a descriptive alt tag for screen readers.</p>
+                    <p class="text-center"><b>Style images to add to your website:</b></p>
+                    <p class="text-center">Make the image rounded by using .image-rounded.</p>
+                    <img class="image-rounded" src="images/Jimmy.png" alt="picture of jimmy from south park" height="140px" width="140px" />
+                    <p class="text-center"><b>HTML code for rounded edges:</b></p>
+                    <p class="text-center">&lt;img&nbsp;class=&quot;image-rounded&quot;&nbsp;src=&quot;images/Jimmy.png&quot;&nbsp;height=&quot;140px&quot;&nbsp;width=&quot;140px&quot;/&gt;</p>
+                    <p class="text-center"><b>CSS for rounded edges:</b></p>
+                    <p class="text-center">.image-rounded&nbsp;{</p>
+                    <p class="text-center">border-radius:&nbsp;6px;}</p>
+
+                </div>
+                <!------------------->
+                <!--Start of Lists -->
+                <div class="container-fluid text-center">
+                    <h2 class="page-header" id="lists">Lists</h2>
+                    <p class="text-center">Lists are put into name-value pairs.</p>
+                    <p class="text-center">Use list-name and list-value for lists and use .list-info on an &lt;ul&gt;.</p>
+                    <!-- name/value list -->
+                    <ul class="list-info">
+                        <li>
+                            <div class="list-name">name</div>
+                            <div class="list-value">value</div>
+                        </li>
+                    </ul>
+                    <!--------------->
+                    <p class="text-center"><b>Html code for name/value list:</b></p>
+                    <p class="text-center">&lt;ul&nbsp;class=&quot;list-info&quot;&gt;</p>
+                    <p class="text-center">&lt;li&gt;</p>
+                    <p class="text-center">&lt;div&nbsp;class=&quot;list-name&quot;&gt;name&lt;/div&gt;</p>
+                    <p class="text-center">&lt;div&nbsp;class=&quot;list-value&quot;&gt;value&lt;/div&gt;</p>
+                    <p class="text-center">&lt;/li&gt;</p>
+                    <p class="text-center">&lt;/ul&gt;</p>
+                    <p class="text-center"><b>CSS for name/value list:</b></p>
+                    <p class="text-center">.list-info&nbsp;{</p>
+                    <p class="text-center">list-style-type:&amp;nbsp;none;}</p>
+                    <p class="text-center">.list-name&nbsp;{</p>
+                    <p class="text-center">text-transform:&nbsp;uppercase;</p>
+                    <p class="text-center">margin-right:&nbsp;100px;</p>
+                    <p class="text-center">border-bottom-style:&nbsp;solid;</p>
+                    <p class="text-center">border-bottom-color:&nbsp;#B6B6B6;}</p>
+                    <p class="text-center">.list-value&nbsp;{</p>
+                    <p class="text-center">border-bottom-style:&nbsp;solid;</p>
+                    <p class="text-center">border-bottom-color:&nbsp;#B6B6B6;}</p>
+                    <p class="text-center">.list-value,&nbsp;.list-name&nbsp;{</p>
+                    <p class="text-center">display:inline;}</p>
+                </div>
+                <!------------------->
+                <div class="container-fluid">
+                    <h2 class="page-header" id="tables">Tables</h2>
+                    <p class="text-center">Tables should take most of the viewport and be left-aligned. Use the .table-timesheet class on &lt;table&gt; to create the timesheet. </p>
+                    <div class="container-fluid">
+                        <table class="table-timesheet">
+                            <tr>
+                                <th>Job Code</th>
+                                <th>Hours</th>
+                                <th>Duties Performed</th>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>8</td>
+                                <td>Loading shipments onto trucks</td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>3.75</td>
+                                <td>Cleaning out stockroom</td>
+                            </tr>
+                        </table>
+                        <p class="text-center"><b>Html code for tables:</b></p>
+                        <p class="text-center">&lt;table&nbsp;class=&quot;table-timesheet&quot;&gt;</p>
+                        <p class="text-center">&lt;tr&gt;</p>
+                        <p class="text-center">&lt;th&gt;Job&nbsp;Code&lt;/th&gt;</p>
+                        <p class="text-center">&lt;th&gt;Hours&lt;/th&gt;</p>
+                        <p class="text-center">&lt;th&gt;Duties&nbsp;Performed&lt;/th&gt;</p>
+                        <p class="text-center">&lt;/tr&gt;</p>
+                        <p class="text-center">&lt;tr&gt;</p>
+                        <p class="text-center">&lt;td&gt;11&lt;/td&gt;</p>
+                        <p class="text-center">&lt;td&gt;8&lt;/td&gt;</p>
+                        <p class="text-center">&lt;td&gt;Loading&nbsp;shipments&nbsp;onto&nbsp;trucks&lt;/td&gt;</p>
+                        <p class="text-center">&lt;/tr&gt;</p>
+                        <p class="text-center">&lt;tr&gt;</p>
+                        <p class="text-center">&lt;td&gt;04&lt;/td&gt;</p>
+                        <p class="text-center">&lt;td&gt;3.75&lt;/td&gt;</p>
+                        <p class="text-center">&lt;td&gt;Cleaning&nbsp;out&nbsp;stockroom&lt;/td&gt;</p>
+                        <p class="text-center">&lt;/tr&gt;</p>
+                        <p class="text-center">&lt;/table&gt;</p>
+                        <p class="text-center"><b>CSS for tables:</b></p>
+                        <p class="text-center">table.table-timesheet&nbsp;{</p>
+                        <p class="text-center">border-collapse:&nbsp;collapse;</p>
+                        <p class="text-center">width:&nbsp;100%;}</p>
+                        <p class="text-center">th,td&nbsp;{</p>
+                        <p class="text-center">text-align:&nbsp;left;</p>
+                        <p class="text-center">padding:&nbsp;8px;}</p>
+                        <p class="text-center">tr&#58;nth-child(even){background-color:&nbsp;#f2f2f2}</p>
+                        <p class="text-center">th&nbsp;{</p>
+                        <p class="text-center">background-color:&nbsp;#4CAF50;</p>
+                        <p class="text-center">color:&nbsp;#FFFFFF;}</p>
+                    </div>
+                </div>
+                <!-- End of table styles ------->
+                <!-- Start of card styles ------>
+                <div class="container-fluid text-center">
+                    <h2 class="page-header" id="cards">Cards</h2>
+                    <div class="container-fluid card">
+                        <!-- card -->
+                        <div class="card">
+                            <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button type="button" class="default-btn">Default</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------->
+                    <p class="text-center">Cards are used when you want to control content. Cards are flexible and can contain different types of content.</p>
+                    <p class="text-center"><b>Html code for cards:</b></p>
+                    <p class="text-center">&lt;div&nbsp;class=&quot;card&quot;&gt;</p>
+                    <p class="text-center">&lt;div&nbsp;class=&quot;card-block&quot;&gt;</p>
+                    <p class="text-center">&lt;h4&nbsp;class=&quot;card-title&quot;&gt;Card&nbsp;title&lt;/h4&gt;</p>
+                    <p class="text-center">&lt;p&nbsp;class=&quot;text-center&quot;&gt;Some&nbsp;quick&nbsp;example&nbsp;text&nbsp;to&nbsp;build&nbsp;on&nbsp;the&nbsp;card&nbsp;title&nbsp;and&nbsp;make&nbsp;up&nbsp;the&nbsp;bulk&nbsp;of&nbsp;the&nbsp;card&apos;s&nbsp;content.&lt;/p&gt;</p>
+                    <p class="text-center">&lt;button&nbsp;type=&quot;button&quot;&nbsp;class=&quot;default-btn&quot;&gt;Default&lt;/button&gt;</p>
+                    <p class="text-center">&lt;/div&gt;</p>
+                    <p class="text-center"><b>CSS for cards:</b></p>
+                    <p class="text-center">.card&nbsp;{</p>
+                    <p class="text-center">width:&nbsp;280px;</p>
+                    <p class="text-center">height:&nbsp;280px;</p>
+                    <p class="text-center">border-radius:&nbsp;6px;</p>
+                    <p class="text-center">padding:inherit;</p>
+                    <p class="text-center">.card-block&nbsp;{</p>
+                    <p class="text-center">background-color:&nbsp;#FFFFFF;</p>
+                    <p class="text-center">border-radius:&nbsp;6px;</p>
+                </div>
+                <!-- End of card styles ------>
+                <!-- Start of dialog styles ---->
+                <div class="container-fluid">
+                    <h2 class="page-header" id="dialogs">Dialogs</h2>
+                    <p class="text-center">Dialogs will have a trigger, content area, and dialog actions within the content area. While the dialog is present, the trigger will turn into a warning button then when the action is completed, it will turn into a success button. This comes in handy when the user is submitting a timesheet.</p>
+                    <button type="button" class="default-btn">Trigger</button>
+                    <button type="button" class="warning-btn">Warning</button>
+                    <button type="button" class="success-btn">Success</button>
+                    <div class="container-fluid dialog">
+                        <div class="dialog">
+                            <h4 class="dialog-header">Are you sure you want to continue?</h4>
+                            <p>Submitting this form will be final and you cannot revert back to make changes.</p>
+                            <button type="button" class="default-btn">Submit</button>&nbsp;
+                            <button type="button" class="default-btn">Cancel</button>
+                        </div>
+                    </div>
+                    <br/>
+                    <p class="text-center"><b>Html code for dialogs:</b></p>
+                    <p class="text-center">&lt;div&nbsp;class=&quot;dialog&quot;&gt;</p>
+                    <p class="text-center">&lt;h4&nbsp;class=&quot;dialog-header&quot;&gt;Are&nbsp;you&nbsp;sure&nbsp;you&nbsp;want&nbsp;to&nbsp;continue?&lt;/h4&gt;</p>
+                    <p class="text-center">&lt;p&gt;Submitting&nbsp;this&nbsp;form&nbsp;will&nbsp;be&nbsp;final&nbsp;and&nbsp;you&nbsp;cannot&nbsp;revert&nbsp;back&nbsp;to&nbsp;make&nbsp;changes.&lt;/p&gt;</p>
+                    <p class="text-center">&lt;button&nbsp;type=&quot;button&quot;&nbsp;class=&quot;default-btn&quot;&gt;Submit&lt;/button&gt;&amp;nbsp;&lt;button&nbsp;type=&quot;button&quot;&nbsp;class=&quot;default-btn&quot;&gt;Cancel&lt;/button&gt;</p>
+                    <p class="text-center">&lt;/div&gt;</p>
+                    <p class="text-center"><b>CSS for dialogs:</b></p>
+                    <p class="text-center">.dialog&nbsp;{</p>
+                    <p class="text-center">background-color:&nbsp;#FFFFFF;</p>
+                    <p class="text-center">border-radius:&nbsp;6px;</p>
+                    <p class="text-center">height:&nbsp;140px;</p>
+                    <p class="text-center">width:&nbsp;280px;}</p>
+                </div>
+                <!-- End of dialog styles ------>
+                <!-- Start of nav menu styles ----->
+                <div class="container-fluid">
+                    <h2 class="page-header" id="navmenus">Navigation Menus</h2>
+                    <p class="text-center">Links will be displayed in a horizontal band. Active link will have a gray underline.</p>
+                    <!-- nav menu -->
+                <div class="container-fluid">
+                    <nav class="navmenu">
+                        <a class="nav-link active" href="#">Link</a>
+                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Another link</a>
+                        <a class="nav-link" href="#">Link</a>
+                    </nav>
+                    <p class="text-center"><b>Html code for navigation menu:</b></p>
+                    <p class="text-center">&lt;nav&nbsp;class=&quot;navmenu&quot;&gt;</p>
+                    <p class="text-center">&lt;a&nbsp;class=&quot;nav-link&nbsp;active&quot;&nbsp;href=&quot;#&quot;&gt;Link&lt;/a&gt;</p>
+                    <p class="text-center">&lt;a&nbsp;class=&quot;nav-link&quot;&nbsp;href=&quot;#&quot;&gt;Link&lt;/a&gt;</p>
+                    <p class="text-center">&lt;a&nbsp;class=&quot;nav-link&quot;&nbsp;href=&quot;#&quot;&gt;Another&nbsp;link&lt;/a&gt;</p>
+                    <p class="text-center">&lt;a&nbsp;class=&quot;nav-link&quot;&nbsp;href=&quot;#&quot;&gt;Link&lt;/a&gt;</p>
+                    <p class="text-center">&lt;/nav&gt;</p>
+                    <p class="text-center"><b>CSS for navigation menu:</b></p>
+                    <p class="text-center">.nav-link&nbsp;{</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;margin-right:&nbsp;40px;}</p>
+                    <p class="text-center">.active&nbsp;{</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;border-bottom-style:&nbsp;solid;</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;border-bottom-color:&nbsp;#B6B6B6;}</p>
+                    </div>
+                    <!---------------->
+                </div>
+                <!-- End of nav menu styles ----->
+                <!-- Start of breadcrumb styles ----->
+                <div class="container-fluid">
+                <h2 class="page-header" id="breadcrumbs">Breadcrumbs</h2>
+                    <p class="text-center">Similar to the layout of the navigation menus, the breadcrumbs are organized in a manner that are appeasing to the user. Each following breadcrumb is a more specific filter to get to the desired product.</p>
+                    <!-- nav menu -->
+                <div class="container-fluid">
+                    <nav class="breadcrumb">
+                        <li><a class="breadcrumb-link active" href="#">Category</a></li>
+                        <li><a class="breadcrumb-link" href="#">Brand</a></li>
+                        <li><a class="breadcrumb-link" href="#">Items</a></li>
+                        <li><a class="breadcrumb-link" href="#">Item Page</a></li>
+                    </nav>
+                    <p class="text-center"><b>Html code for breadcrumb menu:</b></p>
+                    <p class="text-center">&lt;nav&nbsp;class=&quot;breadcrumb&quot;&gt;</p>
+                    <p class="text-center">&lt;li&gt; &lt;a&nbsp;class=&quot;breadcrumb-link&nbsp;active&quot;&nbsp;href=&quot;#&quot;&gt;Category&lt;/a&gt;&lt;/li&gt;</p>
+                    <p class="text-center">&lt;li&gt;&lt;a&nbsp;class=&quot;breadcrumb-link&quot;&nbsp;href=&quot;#&quot;&gt;Brand&lt;/a&gt;&lt;/li&gt;</p>
+                    <p class="text-center">&lt;li&gt;&lt;a&nbsp;class=&quot;breadcrumb-link&quot;&nbsp;href=&quot;#&quot;&gt;Items&nbsp;link&lt;/a&gt;&lt;/li&gt;</p>
+                    <p class="text-center">&lt;li&gt;&lt;a&nbsp;class=&quot;breadcrumb-link&quot;&nbsp;href=&quot;#&quot;&gt;Item Page&lt;/a&gt;&lt;/li&gt;</p>
+                    <p class="text-center">&lt;/nav&gt;</p>
+                    <p class="text-center"><b>CSS for breadcrumb menu:</b></p>
+                   
+                    <p class="text-center">.active&nbsp;{</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;border-bottom-style:&nbsp;solid;</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;border-bottom-color:&nbsp;#B6B6B6;}</p>
+                    </div>
+                </div>
+                <!-- End of breadcrumb styles ------>
+				                <!-- Start of breadcrumb styles ----->
+                <div class="container-fluid">
+                <h2 class="page-header" id="input">Text Inputs</h2>
+                    <p class="text-center"> When it comes to inputs, simplicity is key. The user should be focused on what they are typing. On the Graham-McCroy style guide we have a light grey outline to show the user where the border is along with a helpful placeholder.</p>
+                    <!-- nav menu -->
+                <div class="container-fluid">
+                   <input class="text-input"placeholder="Input Goes Here"></input>
+				   <br><br>
+                    <p class="text-center"><b>Html code for navigation menu:</b></p>
+						<p class="text-center">&lt;input class="text-input" placeholder="Input Goes Here"&gt;&lt;/input&gt;
+                    <p class="text-center"><b>CSS for navigation menu:</b></p>
+                    <p class="text-center">.active&nbsp;{</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;border-bottom-style:&nbsp;solid;</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;border-bottom-color:&nbsp;#B6B6B6;}</p>
+                    </div>
+                </div>
+                <!-- End of breadcrumb styles ------>
+				 <!-- End of breadcrumb styles ------>
+				<!-- Start of breadcrumb styles ----->
+                <div class="container-fluid">
+                <h2 class="page-header" id="textArea">Text Area</h2>
+                    <p class="text-center"> The text area element has similar styles to the text input, but has added width and height so the user is allowed to see a large amount of input at once.</p>
+                    <!-- nav menu -->
+                <div class="container-fluid">
+                   <textarea class="text-area"placeholder="Input Goes Here"></textarea>
+				   <br><br>
+                    <p class="text-center"><b>Html code for navigation menu:</b></p>
+						<p class="text-center">&lt;textarea class="text-area" placeholder="Input Goes Here"&gt;&lt;/textarea&gt;
+                    <p class="text-center"><b>CSS for navigation menu:</b></p>
+                    <p class="text-center">.active&nbsp;{</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;border-bottom-style:&nbsp;solid;</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;border-bottom-color:&nbsp;#B6B6B6;}</p>
+                    </div>
+                </div>
+                <!-- End of breadcrumb styles ------>
+				<!-- Start of date picker styles ----->
+                <div class="container-fluid">
+                <h2 class="page-header" id="date">Date Picker</h2>
+                    <p class="text-center"> The date picker element is soft on the eyes and is easy for the user to use. The user has the option to input the date manually or choose from a calendar that will auto-fill the input box when a date is selected.</p>
+                    <!-- date picker -->
+                <div class="container-fluid">
+                   <input  type="date" class="date-picker"></input>
+				   <br><br>
+                    <p class="text-center"><b>Html code for date picker:</b></p>
+						<p class="text-center">&lt;input class="date-picker" &gt;&lt;/input&gt;
+                    <p class="text-center"><b>CSS for date picker:</b></p>
+					<p class="text-center">.date-picker{</p>
+                    
+					<p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;border&nbsp;1px solid #388E3C;</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;zoom: 1.5;}</p>
+                    </div>
+                </div>
+                <!-- End of date picker styles ------>
+				<!-- Start of radio button styles ----->
+                <div class="container-fluid">
+                <h2 class="page-header" id="radio">Radio Button</h2>
+                    <p class="text-center"> Radio buttons are meant to be simple. The user generally interacts with this element for a second or two. This instance of the radio button is a quick and simplistic way to get information to the user.
+                    <!-- radio button -->
+                <div class="container-fluid">
+                   <input  type="radio" class="radio-button"></input>
+				   <br><br>
+                    <p class="text-center"><b>Html code for date picker:</b></p>
+					<p class="text-center">&lt;input class="date-picker" &gt;&lt;/input&gt;
+                    <p class="text-center"><b>CSS for date picker:</b></p>
+					<p class="text-center">.radio-button{</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;zoom: 1.5;}</p>
+                    </div>
+                </div>
+                <!-- End of eadio button styles ------>
+				<!-- Start of drop down styles ----->
+                <div class="container-fluid">
+                <h2 class="page-header" id="dropdown">Dropdown Menu</h2>
+                    <p class="text-center"> Our dropwdown menu borrows elements from bootstrap but changes a few things with the element. We have the dropdown menu color as part of our custom color palette. The size is also readjusted. Generally, dropdown menus contain links to other pages.</p>
+                    <!-- drop down -->
+                <div class="container-fluid">
+                   <div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle drop-down-button" type="button" data-toggle="dropdown">Dropdown Menu 
+					<span class="caret"></span></button>
+						<ul class="dropdown-menu drop-down">
+							<li><a href="#">WDMD 302</a></li>
+							<li><a href="#">WDMD 312</a></li>
+							<li><a href="#">CNMT 480</a></li>
+						</ul>
+					</div>
+					<br><br>
+                    <p class="text-center"><b>Html code for dropdown menu:</b></p>
+					<p class="text-center">&lt;button class="btn btn-primary dropdown-toggle drop-down-button" type="button" data-toggle="dropdown">Dropdown Menu</p>
+					<p class="text-center">&lt;span class="caret" &gt;&lt;/span&gt;&lt;/button&gt;
+					<p class="text-center">&lt;ul class="dropdown-menu drop-down"&gt;
+					<p class="text-center">&lt;li&gt; &lt;a href="#"&gt; WDMD 302&lt;/a&gt;&lt;/li&gt;
+					<p class="text-center">&lt;li&gt; &lt;a href="#"&gt; WDMD 312&lt;/a&gt;&lt;/li&gt;
+					<p class="text-center">&lt;li&gt; &lt;a href="#"&gt; WDMD 480&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+					
+                    <p class="text-center"><b>CSS for date picker:</b></p>
+					<p class="text-center">.drop-down-button{</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;width:160px; background-color:#388E3C;}</p>
+				</div> 
+				<!-- Start of range slider code ----->
+                <div class="container-fluid">
+                <h2 class="page-header" id="range">Range Slider</h2>
+                    <p class="text-center"> The range slider is meant to provide user input to the application. Our specific rangle slider is larger than normal, which gives a soft look. This also can give the user a more spefic range to select.
+                    <!-- range slider code -->
+                <div class="container-fluid">
+                   <input  type="range" class="range-slider"></input>
+				   <br><br>
+                    <p class="text-center"><b>Html code for range-slider:</b></p>
+					<p class="text-center">&lt;input class="range-slider" &gt;&lt;/input&gt;
+                    <p class="text-center"><b>CSS for range slider:</b></p>
+					<p class="text-center">.range-slider{</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;zoom: 2;}</p>
+                    </div>
+                </div>
+                <!-- End of range slider code ------>
+				<!-- Start of progress indictor code ----->
+                <div class="container-fluid">
+                <h2 class="page-header" id="progress">Progress Indicator</h2>
+                    <p class="text-center"> Also partially from bootstrap, our progress indicator is meant to visually appeal to the user as they wait for whatever is downloading. The color is also from our color palette.
+                    <!-- progress indicator code -->
+                <div class="container-fluid">
+                   <div class="progress-bar progress-bar1 progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%
+				   <br><br>
+                    </div>
+					<p class="text-center"><b>Html code for Progress Indicator:</b></p>
+					<p class="text-center">&lt;div class="progress-indicator" &gt;&lt;/div&gt;
+                    <p class="text-center"><b>CSS for Progress Indicator:</b></p>
+					<p class="text-center">.progress-indicator{</p>
+                    <p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;zoom: 2;}</p>
+                </div>
+                <!-- End of progress incdicator code ------>
+				
+    
+      
+      
+      
+    </form>
+  </div>
+                    </div>
+                </div>
+                <!-- End of drop down styles ------>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+</body>
+
+</html>
